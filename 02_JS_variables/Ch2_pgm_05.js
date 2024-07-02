@@ -10,7 +10,7 @@ console.log(message);
 
 message= "You have a basic knowledge on Javascript";
 console.log(message);
-console.log("Hello " + "World!")
+console.log("Hello " + "World!");
 
 
 /* Further Adventures
