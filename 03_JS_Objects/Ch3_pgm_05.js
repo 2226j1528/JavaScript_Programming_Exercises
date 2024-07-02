@@ -5,7 +5,14 @@ var book;
 book = {
     title : "The Hobbit"
 };
+ console.log(book)
 
+var book1;
+
+book1={
+     title:"The Suitable Boy"
+};
+console.log(book1)
 
 
 /* Further Adventures
