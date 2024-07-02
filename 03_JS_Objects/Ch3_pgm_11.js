@@ -1,17 +1,27 @@
 // Using a property in a calculation
 
 var player1;
+var player2;
 
 player1 = {
 	  name: "Max",
 	  score: 0
 };
 
+player2={
+	name:"Yuva",
+	score: 2.00
+};
 console.log(player1.name + " has scored " + player1.score);
 
-player1.score = player1.score + 50;
+player1.score = player1.score + 1.00;
 
 console.log(player1.name + " has scored " + player1.score);
+console.log(player2.name + " has scored " + player2.score);
+
+var total= player1.score + player2.score;
+
+console.log(player1.name + " and " + player2.name + " have a total score of " + total);
 
 
 
