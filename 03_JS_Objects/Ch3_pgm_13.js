@@ -1,6 +1,6 @@
 // Location for a weather app
 
-var location = {
+var geolocation = {
     "city"      : "San Francisco",
     "state"     : "CA",
     "country"   : "US",
@@ -9,6 +9,8 @@ var location = {
     "longitude" : -122.418,
     "elevation" : 47.000
   };
+
+console.log(geolocation)
   
   
   
