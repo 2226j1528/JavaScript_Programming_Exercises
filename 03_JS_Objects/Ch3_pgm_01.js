@@ -8,6 +8,21 @@ bookAuthor = "J. R. R. Tolkien";
 
 console.log(bookTitle + " by " + bookAuthor);
 
+var bookTitle1;
+var bookAuthor1;
+
+bookTitle1="The Guide";
+bookAuthor1="R.K. Narayanan";
+
+console.log(bookTitle1+" by "+bookAuthor1);
+
+var bookTitle2;
+var bookAuthor2;
+
+bookTitle2="The Suitable Boy";
+bookAuthor2="Vikram Seth";
+
+console.log(bookTitle2+" by "+bookAuthor2);
 
 
 /* Further Adventures
