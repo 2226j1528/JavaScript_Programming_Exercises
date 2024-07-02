@@ -8,11 +8,11 @@ player1 = {
     correct: 0
 };
 
-player1.attempted = 1;
-player1.correct = 1;
-player1.score = 50;
+player1.attempted = 21;
+player1.correct = 12;
+player1.score = 100;
 
-
+console.log(player1)
 
 /* Further Adventures
  *
