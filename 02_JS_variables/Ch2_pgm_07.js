@@ -2,8 +2,9 @@
 
 var playerName = "Kandra";
 var locationName = "The Dungeon of Doom";
+var health=100;
 
-console.log(playerName + " is in " + locationName);
+console.log(playerName +"has health"+" "+health+" "+" is in " + locationName);
 
 
 
@@ -11,7 +12,7 @@ console.log(playerName + " is in " + locationName);
  *
  * 1) Declare a health variable and assign it
  *    a value in one step.
- *
+ 
  * 2) Declare a message variable.
  *
  * 3) Assign message a value created by joining
