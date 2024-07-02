@@ -8,6 +8,8 @@ console.log(message);
 message = 'Congratulations! Your tweet has won a prize...';
 console.log(message);
 
+message= "You have a basic knowledge on Javascript";
+console.log(message);
 
 
 /* Further Adventures
