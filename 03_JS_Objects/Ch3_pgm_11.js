@@ -14,7 +14,7 @@ player2={
 };
 console.log(player1.name + " has scored " + player1.score);
 
-player1.score = player1.score + 1.00;
+player1.score = player1.score + 55;
 
 console.log(player1.name + " has scored " + player1.score);
 console.log(player2.name + " has scored " + player2.score);
