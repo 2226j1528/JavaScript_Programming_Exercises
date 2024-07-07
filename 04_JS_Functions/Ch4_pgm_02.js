@@ -3,6 +3,7 @@
 var movie1;
 var movie2;
 var movie3;
+var movie4;
 
 movie1 = {
   title: "Inside Out",
@@ -22,23 +23,59 @@ movie3 = {
   directors: "J.J.Abrams"
 };
 
-console.log("Movie information for " + movie1.title);
-console.log("------------------------------");
-console.log("Actors: " + movie1.actors);
-console.log("Directors: " + movie1.directors);
-console.log("------------------------------");
+movie4 = {
+  title: "Vikram",
+  actors: "Kamal Hassan",
+  directors: "Lokesh Kanagraj"
+};
 
-console.log("Movie information for " + movie2.title);
-console.log("------------------------------");
-console.log("Actors: " + movie2.actors);
-console.log("Directors: " + movie2.directors);
-console.log("------------------------------");
+function info(movie) {
+  console.log("Movie information for " + movie.title);
+  console.log("------------------------------");
+  console.log("Actors: " + movie.actors);
+  console.log("Directors: " + movie.directors);
+  console.log("\n");
+}
 
-console.log("Movie information for " + movie3.title);
-console.log("------------------------------");
-console.log("Actors: " + movie3.actors);
-console.log("Directors: " + movie3.directors);
-console.log("------------------------------");
+info(movie1);
+info(movie2);
+info(movie3);
+info(movie4);
+
+var event1;
+var event2;
+var event3;
+
+event1 = {
+  name: "Inauguration",
+  date: "05-07-2024",
+  location: "Open Auditorium, KGISL Campus"
+};
+
+event2 = {
+  name: "Onam",
+  date: "21-08-2024",
+  location: "Open Auditorium, KGISL Campus"
+};
+
+event3 = {
+  name: "Pongal",
+  date: "10-01-2025",
+  location: "Open Auditorium, KGISL Campus"
+};
+
+function Event(event) {
+  console.log("Event: " + event.name);
+  console.log("------------------------------");
+  console.log("Date: " + event.date);
+  console.log("Location: " + event.location);
+  console.log("\n"); // Adds a newline for spacing
+}
+
+Event(event1);
+Event(event2);
+Event(event3);
+
 
 
 
