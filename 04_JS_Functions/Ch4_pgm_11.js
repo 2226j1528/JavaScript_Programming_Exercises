@@ -41,6 +41,47 @@ showMovieInfo();
 movie = movie3;
 showMovieInfo();
 
+var question1;
+var question2;
+var question3;
+var question;
+var showQuestion;
+
+question1 = {
+    questionText: "What is the capital of India?",
+    options: ["A) Coimbatore", "B) Maharashatra", "C) Delhi", "D) Gujarat"],
+    correctAnswer: "C"
+};
+
+question2 = {
+    questionText: "Which is known as Scripting language?",
+    options: ["A) Javascript", "B) HTML", "C) CSS", "D) Java"],
+    correctAnswer: "A"
+};
+
+question3 = {
+    questionText: "Who wrote 'Wings of fire'?",
+    options: ["A) Abdul Kalam", "B) Oscar Wilde", "C) Ruskin Bond", "D) R. K. Narayanan"],
+    correctAnswer: "A"
+};
+
+showQuestion = function () {
+    console.log("Question: " + question.questionText);
+    console.log("Options:");
+    for (var i = 0; i < question.options.length; i++) {
+        console.log(question.options[i]);
+    }
+    console.log("------------------------------");
+};
+
+question = question1;
+showQuestion();
+
+question = question2;
+showQuestion();
+
+question = question3;
+showQuestion();
 
 
 /* Further Adventures
