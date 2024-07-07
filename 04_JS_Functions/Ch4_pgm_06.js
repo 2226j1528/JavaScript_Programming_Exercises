@@ -3,14 +3,22 @@
 var sayHello;
 
 sayHello = function () {
-	console.log("Hello World!");
+	console.log("Hello\nMom!");
 };
 
 sayHello();
 sayHello();
 sayHello();
 
+var Letters;
 
+printLetters = function () {
+    var message = "Hello World!";
+        console.log(message);
+};
+
+// Run the printLetters function
+printLetters();
 
 /* Further Adventures
  *
