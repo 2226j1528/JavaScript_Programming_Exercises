@@ -11,16 +11,19 @@ movie1 = {
 };
 
 showMovieInfo = function () {
-  console.log("Movie information for " + movie.title);
-  console.log("------------------------------");
-  console.log("Actors: " + movie.actors);
-  console.log("Directors: " + movie.directors);
-  console.log("------------------------------");
+    console.log("Movie information for " + movie.title);
+    console.log("------------------------------");
+    console.log("Actors: " + movie.actors);
+    console.log("Directors: " + movie.directors);
+    console.log("------------------------------");
 };
-
-movie = movie1;
-
-showMovieInfo();
+var movie2 = {};
+movie = movie2;
+movie2.title = "Vikram";
+movie2.actors = "Kamal Hassan";
+movie2.directors = "Lokesh Kanagaraj";
+movie = movie2;
+showMovieInfo(); 
 
 
 
