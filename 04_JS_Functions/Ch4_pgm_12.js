@@ -6,33 +6,35 @@ var sale3;
 var sale;
 var calculateTax;
 var displaySale;
+var calculateAndDisplayTax;
 
 sale1 = { price: 140, taxRate: 15 };
 sale2 = { price: 40, taxRate: 10 };
 sale3 = { price: 120, taxRate: 20 };
+sale4 = { price: 200, taxRate: 18 };
 
-calculateTax = function () {
-	sale.tax = sale.price * sale.taxRate / 100;
-	sale.total = sale.price + sale.tax;
-};
-
-displaySale = function () {
-  console.log("price = $" + sale.price);
-  console.log("tax @ " + sale.taxRate + "% = $" + sale.tax);
-  console.log("total cost = $" + sale.total);
+calculateAndDisplayTax = function () {
+    sale.tax = sale.price * sale.taxRate / 100;
+    sale.total = sale.price + sale.tax;
+    
+    console.log("price = $" + sale.price);
+    console.log("tax @ " + sale.taxRate + "% = $" + sale.tax);
+    console.log("total cost = $" + sale.total);
+    console.log("------------------------------"); 
 };
 
 sale = sale1;
-calculateTax();
-displaySale();
+calculateAndDisplayTax();
 
 sale = sale2;
-calculateTax();
-displaySale();
+calculateAndDisplayTax();
 
 sale = sale3;
-calculateTax();
-displaySale();
+calculateAndDisplayTax();
+
+sale = sale4;
+calculateAndDisplayTax();
+
 
 
 
