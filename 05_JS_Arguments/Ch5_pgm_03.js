@@ -7,6 +7,8 @@ showMessage = function (message) {
 };
 
 showMessage("It's full of stars!");
+showMessage("It's full of blue sky!");
+showMessage("It's full of light!");
 
 
 
