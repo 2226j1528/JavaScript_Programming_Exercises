@@ -4,8 +4,11 @@ var player1;
 var player2;
 var showPlayerHealth;
 
-showPlayerHealth = function (playerName, playerHealth) {
-    console.log(playerName + " has health " + playerHealth);
+showPlayerHealth = function (playerName, playerHealth, playerHealthMultiplier) {
+    var HealthInfo;
+    var health = playerHealth * playerHealthMultiplier ;
+    HealthInfo = playerName + ":health" + health ;
+    console.log(HealthInfo);
 };
 
 player1 = {
@@ -20,8 +23,11 @@ player2 = {
     health: 40
 };
 
-showPlayerHealth(player1.name, player1.health);
-showPlayerHealth(player2.name, player2.health);
+showPlayerHealth(player1.name, player1.health, player1.healthMultiplier);
+showPlayerHealth(player2.name, player2.health, player2.healthMultiplier);
+
+showPlayerHealth("Ahalya", 60, 23);
+showPlayerHealth("Rindhiya", 50, 24);
 
 
 
