@@ -13,7 +13,18 @@ square(-2);
 square(1111);
 square(0.5);
 
+var cube;
 
+cube = function(numberToCube) {
+  var result;
+  result=numberToCube * numberToCube * numberToCube * numberToCube;
+  console.log(numberToCube + " * " + numberToCube + " * " + numberToCube + " * " + numberToCube + " = " + result);
+};
+
+cube(10);
+cube(-2);
+cube(1111);
+cube(0.5);
 
 /* Further Adventures
  *
