@@ -9,7 +9,35 @@ showSum = function (number1, number2) {
 
 showSum(30, 23);
 showSum(2.8, -5);
+showSum(56, 74);
 
+var showProduct;
+
+showProduct = function (number1, number2) {
+	var total = number1 * number2;
+	console.log("The Product is " + total);
+};
+
+showProduct(23, 3, 4);
+
+var showDifference;
+
+showDifference =  function (number1, number2) {
+	var total = number1 - number2;
+	console.log("The Difference is " + total);
+};
+
+showDifference(23, 3, 4);
+
+
+var showQuotient;
+
+showQuotient =  function (number1, number2) {
+	var total = number1 / number2;
+	console.log("The Quotient is " + total);
+};
+
+showQuotient(4, 2);
 
 
 /* Further Adventures
