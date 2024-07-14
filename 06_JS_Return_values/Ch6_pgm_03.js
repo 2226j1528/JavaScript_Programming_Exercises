@@ -3,11 +3,15 @@
 var getHelloTo;
 
 getHelloTo = function (name) {
-    return "Hello to " + name;
+    var template;
+    template = "Hello to {{name}}";
+    template = template.replace("{{name}}", name);
+    return template;
 };
 
-console.log(getHelloTo("Kandra"));
-console.log(getHelloTo("Dax"));                                         
+console.log(getHelloTo("Kandra")); // Output: "Hello to Kandra"
+console.log(getHelloTo("Dax"));    // Output: "Hello to Dax"
+                                       
 
 
 
