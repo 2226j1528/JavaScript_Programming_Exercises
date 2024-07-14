@@ -1,17 +1,22 @@
 // Returning a value from a function
 
 var getMessage;
+var getMyMessage;
 var response;
 
 getMessage = function () {
     return "I’m going on an adventure!";
 };
 
+getMyMessage = function () {
+    return "Hello from my custom message!";
+};
+
 response = getMessage();
+response1 = getMyMessage();
 
 console.log(response);
-
-
+console.log(response1);
 
 /* Further Adventures
  *
