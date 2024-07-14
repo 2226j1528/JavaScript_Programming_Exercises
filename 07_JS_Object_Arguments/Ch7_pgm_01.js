@@ -1,6 +1,6 @@
 // Passing a function an object as an argument
 
-var planet1;
+var planet1, planet2;
 var getPlanetInfo;
 
 planet1 = {
@@ -11,11 +11,24 @@ planet1 = {
     sizeRank: 1
 };
 
+planet2 = {
+    name: "Mercury",
+    position: 1,
+    type: "Gas Giant",
+    radius: 3424,
+    sizeRank: 7
+};
+
 getPlanetInfo = function (planet) {
-    return planet.name + ": planet number " + planet.position;
+    return planet.name + 
+           ": planet number " + planet.position + 
+           ", type: " + planet.type + 
+           ", radius: " + planet.radius + " km" + 
+           ", size rank: " + planet.sizeRank;
 };
 
 console.log(getPlanetInfo(planet1));
+console.log(getPlanetInfo(planet2));
 
 
 
