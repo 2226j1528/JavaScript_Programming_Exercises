@@ -3,14 +3,28 @@
 var add;
 
 add = function (number1, number2) {
-	var total = number1 + number2;
-
-	return total;
+    var total = number1 + number2;
+    return total;
 };
 
-var sum = add(50, 23);
+var sum = add(10, 15);
+console.log(sum); 
 
-console.log(sum);
+var sum1 = add(50, 23);
+console.log("The sum of 50 and 23 is " + sum1); 
+
+var totalSum = add(add(10, 15), 20);
+console.log(totalSum);
+
+var addThreeNumbers;
+
+addThreeNumbers = function (number1, number2, number3) {
+    var total = number1 + number2 + number3;
+    return total;
+};
+
+var sumThree = addThreeNumbers(10, 15, 20);
+console.log(sumThree);
 
 
 
