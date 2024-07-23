@@ -5,12 +5,39 @@ var line = function (lineLength) {
     lineLength = Math.max(0, lineLength);
     lineLength = Math.min(40, lineLength);
     return line.substr(0, lineLength);
-  };
-  
-  console.log(line(30));
-  console.log(line(40));
-  console.log(line(50));
-  
+};
+
+for (var i = -20; i <= 60; i += 10) {
+    console.log("line(" + i + "): " + line(i));
+}
+
+var spaces = function (numSpaces) {
+    var spaceStr = "                                        "; // 40 spaces
+    numSpaces = Math.max(0, numSpaces);
+    numSpaces = Math.min(40, numSpaces);
+    return spaceStr.substr(0, numSpaces);
+};
+
+console.log("spaces(10): '" + spaces(10) + "'");
+console.log("spaces(45): '" + spaces(45) + "'");
+console.log("spaces(-5): '" + spaces(-5) + "'");
+
+var emptyBox = function (width) {
+    var topBottom = line(width);
+    var middle = "=" + spaces(width - 2) + "=";
+
+    console.log(topBottom);
+    for (var i = 0; i < 3; i++) {
+        console.log(middle);
+    }
+    console.log(topBottom);
+};
+
+emptyBox(12);
+emptyBox(5);
+emptyBox(40);
+emptyBox(50);
+
   
   
   /* Further Adventures
