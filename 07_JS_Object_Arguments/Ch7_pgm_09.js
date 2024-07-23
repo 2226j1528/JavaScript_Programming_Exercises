@@ -3,8 +3,17 @@
 var message = "We choose to go to the Moon!";
 
 var charIndex = message.indexOf("M");
+console.log(message.substr(charIndex, 3)); // "Moo"
 
-console.log(message.substr(charIndex, 3));
+var goIndex = message.indexOf("go");
+console.log("The word 'go' starts at index: " + goIndex);
+
+var chooseIndex = message.indexOf("choose");
+var chooseWord = message.substr(chooseIndex, 6); 
+console.log("The word 'choose' is: " + chooseWord);
+
+var ooIndex = message.lastIndexOf("oo");
+console.log("The 'oo' in 'Moon' starts at index: " + ooIndex);
 
 
 
