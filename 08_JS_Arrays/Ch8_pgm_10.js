@@ -1,10 +1,27 @@
 // Using the arguments passed by forEach - compact
 
-[ "Dax", "Jahver", "Kandra" ].forEach(function (item, index, wholeArray) {
-    console.log("Item: " + item);
-    console.log("Index: " + index);
-    console.log("Array: " + wholeArray);
-  });
+var rectangles = [
+  { length: 5, width: 3 },
+  { length: 10, width: 4 },
+  { length: 6, width: 2 },
+  { length: 7, width: 5 }
+];
+
+function assignArea(rectangle) {
+  rectangle.area = rectangle.length * rectangle.width;
+}
+
+function showInfo(rectangle) {
+  console.log("Length: " + rectangle.length);
+  console.log("Width: " + rectangle.width);
+  console.log("Area: " + rectangle.area);
+}
+
+rectangles.forEach(function(rectangle) {
+  assignArea(rectangle);
+  showInfo(rectangle);
+});
+
   
   
   
