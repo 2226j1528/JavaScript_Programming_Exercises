@@ -4,16 +4,31 @@ var items;
 var showInfo;
 
 items = [
-  "The Pyramids",
-  "The Grand Canyon",
-  "Bondi Beach"
+    "The Pyramids",
+    "The Grand Canyon",
+    "Bondi Beach"
 ];
 
 showInfo = function (itemToShow) {
-    console.log(itemToShow);
+    console.log(itemToShow + " (" + itemToShow.length + " letters)");
 };
 
+items.push("The Great Wall of China");
+items.push("Machu Picchu");
+items[5] = "Christ the Redeemer";
+
 items.forEach(showInfo);
+
+var getTotalLetters = function (array) {
+    var totalLetters = 0;
+    array.forEach(function(item) {
+        totalLetters += item.length;
+    });
+    return totalLetters;
+};
+
+console.log("Total number of letters: " + getTotalLetters(items));
+
 
 
 
