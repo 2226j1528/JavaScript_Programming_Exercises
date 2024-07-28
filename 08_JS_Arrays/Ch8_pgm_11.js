@@ -1,8 +1,8 @@
 // Finding the total shopping bill
 
 
-var costs = [1.99, 4.95, 2.50, 9.87, 3.99];
-var numOfEach = [2, 1, 5, 2, 3];
+var costs = [1.99, 4.95, 2.50, 9.87, 3.99, 5.49];
+var numOfEach = [2, 1, 5, 2, 3, 4];
 
 var getTotalBill = function (itemCosts, itemCounts) {
   var total = 0;
@@ -21,7 +21,8 @@ var items = [
   { cost: 4.95, numberBought: 1 },
   { cost: 2.50, numberBought: 5 },
   { cost: 9.87, numberBought: 2 },
-  { cost: 3.99, numberBought: 3 }
+  { cost: 3.99, numberBought: 3 },
+  { cost: 5.49, numberBought: 4 }
 ];
 
 var getTotalBillFromItems = function (items) {
@@ -35,6 +36,7 @@ var getTotalBillFromItems = function (items) {
 };
 
 console.log("The total cost is $" + getTotalBillFromItems(items));
+
 
 
 /* Further Adventures
