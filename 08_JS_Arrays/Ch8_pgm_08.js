@@ -2,21 +2,17 @@
 
 var items = [ "The Pyramids", "The Grand Canyon", "Bondi Beach" ];
 
-console.log("Dream destinations:");
+function showItems() {
+    console.log("Dream destinations:");
+    console.log("Number of places to visit: " + items.length);
+    items.forEach(function(item) {
+        console.log(" – " + item);
+    });
+}
 
-items.forEach(function (item) {
-	console.log(" – " + item);
-});
-
-
+showItems();
 
 /* Further Adventures
- *
- * 1) Change the program to show the number of
- *    places to visit as well as the places themselves.
- *
- * 2) Wrap the display code in a function
- *    and assign it to the showItems variable.
  *
  * 3) Click after the prompt on the console,
  *    type showItems() and press Enter.
