@@ -12,22 +12,23 @@ var buildPlanet = function (name, position, type) {
         info += ": planet " + planet.position;
         info += " - " + planet.type;
         console.log(info);
-      };
+        console.log("-------------"); 
+    };
 
     return planet;
 };
 
 var planets = [
-    buildPlanet( "Jupiter", 5, "Gas Giant" ),
-    buildPlanet( "Neptune", 8, "Ice Giant" ),
-    buildPlanet( "Mercury", 1, "Terrestrial" )
+    buildPlanet("Jupiter", 5, "Gas Giant"),
+    buildPlanet("Neptune", 8, "Ice Giant"),
+    buildPlanet("Mercury", 1, "Terrestrial"),
+    buildPlanet("Saturn", 6, "Gas Giant"), // New planet
+    buildPlanet("Earth", 3, "Terrestrial")  // New planet
 ];
 
 planets.forEach(function (planet) {
     planet.showPlanet();
 });
-
-
 
 /* Further Adventures
  *
