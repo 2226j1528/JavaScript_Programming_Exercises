@@ -26,8 +26,30 @@ question1.addOption("Bordeaux");
 question1.addOption("F");
 question1.addOption("Paris");
 question1.addOption("Brussels");
+question1.addOption("Lyon");  // Fifth option added
 
-question1.showQuestion();
+var question2 = new QuizQuestion(
+    "Which planet is known as the Red Planet?",
+    "Mars"
+);
+
+question2.addOption("Earth");
+question2.addOption("Mars");
+question2.addOption("Venus");
+question2.addOption("Jupiter");
+question2.addOption("Saturn");
+
+var question3 = new QuizQuestion(
+    "What is the largest mammal?",
+    "Blue Whale"
+);
+
+question3.addOption("Elephant");
+question3.addOption("Blue Whale");
+question3.addOption("Great White Shark");
+question3.addOption("Giraffe");
+question3.addOption("Orca");
+
 
 
 
