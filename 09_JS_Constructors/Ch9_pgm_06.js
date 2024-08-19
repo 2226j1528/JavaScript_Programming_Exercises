@@ -7,26 +7,48 @@ var Planet = function (name, position, type) {
     this.showPlanet = function () {
         console.log(this.name);
         console.log("Planet " + this.position + " - " + this.type);
-        console.log("Moons: " + this.moons.join(', ') + ".");
+        this.showMoons();
     };
   
     this.addMoon = function (moon) {
         this.moons.unshift(moon);
+    };
+  
+    this.showMoons = function () {
+        this.moons.forEach(function (moon, index) {
+            console.log("(" + index + ") " + moon);
+        });
+    };
+  
+    this.getMoon = function (index) {
+        if (index >= 0 && index < this.moons.length) {
+            return this.moons[index];
+        } else {
+            return "Moon not found!";
+        }
     };
 };
 
 var planet1 = new Planet("Jupiter", 5, "Gas Giant");
 planet1.addMoon("Io");
 planet1.addMoon("Europa");
+planet1.addMoon("Ganymede");
 
 var planet2 = new Planet("Neptune", 8, "Ice Giant");
 planet2.addMoon("Triton");
+planet2.addMoon("Nereid");
 
 var planet3 = new Planet("Mercury", 1, "Terrestrial");
+planet3.addMoon("No Moons");
 
 [ planet1, planet2, planet3 ].forEach(function (planet) {
     planet.showPlanet();
 });
+
+// Example usage of getMoon method:
+console.log(planet1.getMoon(1));  // Outputs: Europa
+console.log(planet2.getMoon(0));  // Outputs: Nereid
+console.log(planet3.getMoon(2));  // Outputs: Moon not found!
 
 
 
